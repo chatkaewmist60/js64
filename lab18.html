@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <script>
+          let user = {
+               name: 'John',
+               sayHi: function () {
+                    console.log(this.name);
+               }
+          };
+
+          (user.sayHi)(); // *  John เพราะเป็น method shorthand เพราะว่า sayHi is function ที่ log name in user /This dot name is John
+     </script>
+</body>
+
+</html>
